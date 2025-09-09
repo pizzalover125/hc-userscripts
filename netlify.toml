@@ -1,3 +1,6 @@
 [build]
   command = "npm run build"
   publish = "build"
+
+[build.environment]
+SECRETS_SCAN_OMIT_KEYS = "VITE_PUBLIC_SUPABASE_URL,VITE_PUBLIC_SUPABASE_ANON_KEY"
